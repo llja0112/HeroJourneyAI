@@ -1,6 +1,23 @@
+import { RxLightningBolt, RxRocket } from "react-icons/rx";
+import { GiTrophy, GiTrophyCup } from "react-icons/gi";
+
 export default function Page () {
   return (
     <div className="max-w-lg mx-auto">
+      <div className="card bg-base-100 shadow-xl mb-5">
+        <div className="card-body">
+          <div className="columns-2">
+            <div className="text-center text-xl">
+              <RxLightningBolt className="mx-auto text-yellow-500" /> 
+              200 xp
+            </div>
+            <div className="text-center text-xl text-blue-500">
+              <RxRocket className="mx-auto" /> 
+              45 days streak
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="card bg-base-100 shadow-xl mb-5">
         <div className="card-body">
@@ -43,6 +60,20 @@ export default function Page () {
             </div>
           </div>
           <div className="text-center"> to next stay clean milestone!</div>
+        </div>
+      </div>
+
+      <div className="card bg-base-100 shadow-xl mb-5">
+        <div className="card-body">
+          <GiTrophy className="mx-auto text-4xl text-yellow-500" />
+          <h1 className="text-center font-bold mb-3">Rewards</h1>
+          <ol className="list-decimal list-inside">
+            <li><GiTrophyCup className="inline-block text-blue-300" /> Completed Stay Clean course!</li>
+            <li><GiTrophyCup className="inline-block text-yellow-300" /> Completed 5 day Stay Clean streak!</li>
+            <li><GiTrophyCup className="inline-block text-yellow-300" /> Completed 5 day Stay Clean streak!</li>
+            <li><GiTrophyCup className="inline-block text-yellow-300" /> Completed 10 day Stay Clean streak!</li>
+            <li><GiTrophyCup className="inline-block text-yellow-300" /> Completed 20 day Stay Clean streak!</li>
+          </ol>
         </div>
       </div>
     </div>
