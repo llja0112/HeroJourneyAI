@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Page () {
   return (
     <div className="max-w-lg mx-auto">
@@ -13,7 +15,7 @@ export default function Page () {
           <h2 className="card-title">I overdosed! What should I do?</h2>
           <p>Learn more about how to cope with overdoses. Know where to look for resources and who you can approach for help.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Learn Now</button>
+            <Link href="/learn/stayclean" className="btn btn-primary">Learn Now</Link>
           </div>
         </div>
       </div>
